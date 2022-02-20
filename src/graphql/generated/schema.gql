@@ -1,0 +1,58 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateProductInput {
+  description: String!
+  images: [String!]!
+  name: String!
+  price: Float!
+}
+
+input CreateUserInput {
+  email: String!
+  firstName: String!
+  lastName: String!
+  password: String!
+}
+
+input DeleteProductInput {
+  id: String!
+}
+
+type LoginResponse {
+  accessToken: String!
+  user: User!
+}
+
+type Mutation {
+  createProduct(createProductInput: CreateProductInput!): Product!
+  createUser(createUserInput: CreateUserInput!): User!
+  deleteProduct(id: DeleteProductInput!): Boolean!
+  loginUser(email: String!, password: String!): LoginResponse!
+}
+
+type Product {
+  description: String!
+  id: ID
+  images: String!
+  name: String!
+  price: Float!
+}
+
+type ProductPage {
+  nodes: [Product!]!
+  totalRows: Float!
+}
+
+type Query {
+  getProducts(order: String, skip: Int = 0, take: Int = 25): ProductPage!
+  getSingleProduct(id: String!): Product!
+}
+
+type User {
+  email: String!
+  firstName: String!
+  id: ID!
+  lastName: String!
+}

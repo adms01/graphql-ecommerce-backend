@@ -1,0 +1,1 @@
+{"version":3,"file":"login-response.model.js","sourceRoot":"","sources":["../../../src/auth/models/login-response.model.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,6CAAoD;AACpD,uEAA2D;AAG3D,IAAa,aAAa,GAA1B,MAAa,aAAa;CAMzB,CAAA;AAJC;IADC,eAAK,EAAE;;kDACY;AAGpB;IADC,eAAK,EAAE;8BACD,kBAAI;2CAAC;AALD,aAAa;IADzB,oBAAU,EAAE;GACA,aAAa,CAMzB;AANY,sCAAa"}
